@@ -1,4 +1,4 @@
-site_name: BARELANG63
+site_name: Barelang63 Documentations
 site_url: https://mydomain.org/mysite
 theme:
   name: material
@@ -18,10 +18,9 @@ theme:
   - search.share
   
   palette: 
-    primary: orange
+    primary: black
 
-    
-
+  logo: assets/logo.png
 
 plugins:
   - search
