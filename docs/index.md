@@ -5,7 +5,7 @@
 ## **Vision**
 Dokumentasi tentang build dan running program vision ada di bawah:
 
-[Vision](VISION/install_zed_sdk.md)
+[Vision](VISION)
 
 ## **Installation Library**
 Installasi library untuk kebutuhan program nasional, regional, dan lain-lain:
