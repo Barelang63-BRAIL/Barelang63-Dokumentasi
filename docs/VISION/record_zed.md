@@ -29,7 +29,9 @@ Setelah mem-build program, Anda dapat menjalankannya dengan perintah berikut:
 ```
 
 Tekan tombol 's' untuk mulai merekam video.
+
 Tekan tombol 'x' untuk menghentikan rekaman.
+
 Tekan tombol 'Esc' untuk keluar dari program.
 
 ### Video akan disimpan di folder 'videos'.
