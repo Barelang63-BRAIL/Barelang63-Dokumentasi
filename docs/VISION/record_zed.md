@@ -28,7 +28,7 @@ Setelah mem-build program, Anda dapat menjalankannya dengan perintah berikut:
 ./zed_camera_record
 ```
 
-Tekan tombol 's' untuk mulai merekam video. 
+Tekan tombol 's' untuk mulai merekam video.         
 Tekan tombol 'x' untuk menghentikan rekaman.    
 Tekan tombol 'Esc' untuk keluar dari program.   
 
