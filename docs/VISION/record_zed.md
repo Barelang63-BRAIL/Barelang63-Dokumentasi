@@ -13,6 +13,7 @@ Instal OpenCV: Pastikan OpenCV sudah terinstal. Jika belum, Anda dapat mengikuti
 
 ## B. Build Program
 Buat direktori build: Buka terminal dan navigasikan ke direktori yang berisi program dan file CMakeLists.txt, lalu buat direktori build:
+
 ``` bash
 cd Capture-and-Record-Video-using-Zed-Camera
 mkdir build
@@ -22,6 +23,7 @@ make
 ```
 ## C. Menjalankan Program
 Setelah mem-build program, Anda dapat menjalankannya dengan perintah berikut:
+
 ```bash
 ./zed_camera_record
 ```
