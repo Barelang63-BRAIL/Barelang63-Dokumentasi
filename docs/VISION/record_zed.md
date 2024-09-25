@@ -1,4 +1,4 @@
-# Capture and Record Video using Zed Camera
+# Capture dan Record Video Menggunakan Zed Camera
 
 Sebelum mengikuti langkah-langkah di bawah ini, clone repositori ini terlebih dahulu:
 ```
@@ -28,10 +28,8 @@ Setelah mem-build program, Anda dapat menjalankannya dengan perintah berikut:
 ./zed_camera_record
 ```
 
-Tekan tombol 's' untuk mulai merekam video.
-
-Tekan tombol 'x' untuk menghentikan rekaman.
-
-Tekan tombol 'Esc' untuk keluar dari program.
+Tekan tombol 's' untuk mulai merekam video. 
+Tekan tombol 'x' untuk menghentikan rekaman.    
+Tekan tombol 'Esc' untuk keluar dari program.   
 
 ### Video akan disimpan di folder 'videos'.
