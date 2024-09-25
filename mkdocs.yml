@@ -31,4 +31,7 @@ nav:
 
   - VISION:
     - Record Menggunakan ZED Camera: VISION/record_zed.md
+    - Install ZED SDK: VISION/install_zed.md
 
+  - Installation:
+    - Install All Package Robot: INSTALL/install_all.md
