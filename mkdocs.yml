@@ -30,7 +30,6 @@ plugins:
 nav:
   - HOME: index.md
 
-  - DOCS:
-    - Contoh: about/docs.md
-    - Vision: about/vision.md
+  - VISION:
+    - Record Menggunakan ZED Camera: VISION/record_zed.md
 
