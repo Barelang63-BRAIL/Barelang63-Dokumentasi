@@ -7,9 +7,9 @@ git clone https://github.com/dsyahput/Capture-and-Record-Video-using-Zed-Camera.
 
 ## A. Prasyarat:
 
-Instal ZED SDK: Unduh dan instal ZED SDK dari situs web resmi Stereolabs ZED SDK.
+Install ZED SDK: Download dan instal ZED SDK dari situs web resmi Stereolabs ZED SDK.
 
-Instal OpenCV: Pastikan OpenCV sudah terinstal. Jika belum, Anda dapat mengikuti petunjuk instalasi OpenCV sesuai dengan platform yang Anda gunakan.
+Install OpenCV: Pastikan OpenCV sudah terinstall. Jika belum, Anda dapat mengikuti petunjuk instalasi OpenCV sesuai dengan platform yang Anda gunakan.
 
 ## B. Build Program
 Buat direktori build: Buka terminal dan navigasikan ke direktori yang berisi program dan file CMakeLists.txt, lalu buat direktori build:
