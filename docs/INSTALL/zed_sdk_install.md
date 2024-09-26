@@ -5,4 +5,4 @@ Pastikan install zed sdk sama dengan versi cuda dan jangan install versi AI mode
 
 Install ZED SDK using this:
 
-(https://www.stereolabs.com/docs/installation/linux)
+[ZED SDK](https://www.stereolabs.com/docs/installation/linux)
