@@ -9,12 +9,12 @@ Library ini berasal dari: https://github.com/RoboCup-MSL/rtdb2
 
 This project uses some 3rd-party libraries:
 
-- LZ4
-- zstd
-- LMDB
-- Msgpack
-- Xerces-c
-- xsdcxx
+-  LZ4
+-  zstd
+-  LMDB
+-  Msgpack
+-  Xerces-c
+-  xsdcxx
 
 
 ## How to build
