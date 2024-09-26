@@ -1,8 +1,6 @@
 # Robot Installation
 
-## Command to Download Packages for Regional, Offline, etc.
-
-Install Required Libraries from GitHub:
+Instalasi Library yang Diperlukan dari GitHub:
 
 - [ArduinoJSON](https://github.com/bblanchon/ArduinoJson.git)
 - [CppLinuxSerial](https://github.com/gbmhunter/CppLinuxSerial.git)
@@ -11,8 +9,8 @@ Install Required Libraries from GitHub:
 - [IcecreamCPP] (Copy from Barelang63 hard drive)
 
 
-## How to Install Libraries from GitHub
-To clone the repository, use the following command:
+## Cara Menginstal Library dari GitHub
+untuk clone repository, gunakan perintah berikut:
 ```
 git clone https://github.com/bblanchon/ArduinoJson.git
 ```
@@ -23,10 +21,10 @@ mkdir build
 cmake ..
 sudo make install
 ```
-Repeat this process for each library you clone.
+Ulangi proses ini untuk setiap library yang di-kloning.
 
-## Install Libraries for the Robot:
-Run the following command to install the necessary libraries:
+## Instalasi Library untuk Robot:
+Jalankan perintah berikut untuk menginstal library yang diperlukan:
 ```
 sudo apt-get install \
     net-tools \

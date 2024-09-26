@@ -36,3 +36,4 @@ nav:
   - INSTALLATION:
     - Install All Package Robot: INSTALL/install_all.md
     - Build rtdb2 Package Robot: INSTALL/rtdb2_build.md
+    - Install ZED SDK: INSTALL/zed_sdk_install.md

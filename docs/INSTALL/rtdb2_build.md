@@ -1,13 +1,14 @@
 # Build RTDB2
 
-## What is Rtdb2 ?
-Rtdb2 is Communication based on udp ussualy use in competition Middle Size League (MSL)
+## Apa itu Rtdb2 ?
+Rtdb2 adalah package komunikasi antar robot dari MSL robocup
 
-This Library is based on: https://github.com/RoboCup-MSL/rtdb2
+Library ini berasal dari: https://github.com/RoboCup-MSL/rtdb2
 
 ## Requirements
 
 This project uses some 3rd-party libraries:
+
 - LZ4
 - zstd
 - LMDB
@@ -17,7 +18,7 @@ This project uses some 3rd-party libraries:
 
 
 ## How to build
-Before build this package please do instruction from this: [install robot](install_all.md)
+Sebelum memulai build lakukan proses ini terlebih dahulu: [install robot](install_all.md)
 
 ```
 - copy folder rtdb2 in hardisk barelang63
