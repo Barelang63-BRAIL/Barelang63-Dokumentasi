@@ -6,7 +6,7 @@ sudo rm -r /usr/include/opencv4/opencv2
 ```
 berikut langkah-langkah mem-build Opencv dari source dengan aktivasi Cuda:
 
-A. install deoendencies yang diperlukan.
+### A. install deoendencies yang diperlukan.
 ```
 sudo apt-get update
 sudo apt-get install -y libgtk2.0-dev pkg-config build-essential cmake git \
@@ -15,20 +15,20 @@ sudo apt-get install -y libgtk2.0-dev pkg-config build-essential cmake git \
     libavcodec-dev libavformat-dev libswscale-dev
 ```
 
-B. Clone repositori opencv dan opencv_contrib:
+### B. Clone repositori opencv dan opencv_contrib:
 ```
 git clone https://github.com/opencv/opencv.git
 git clone https://github.com/opencv/opencv_contrib.git
 ```
 
-C. Buat folder build pada folder opencv yang telah di clone.
+### C. Buat folder build pada folder opencv yang telah di clone.
 ```
 cd opencv
 mkdir build
 cd build
 ```
 
-D. Build opencv dalam folder build yang telah dibuat, sebelum melakukan build periksa CUDA_ARCH_BIN yang terdapat pada sistem anda, dengan command:
+### D. Build opencv dalam folder build yang telah dibuat, sebelum melakukan build periksa CUDA_ARCH_BIN yang terdapat pada sistem anda, dengan command:
 ```
 nvidia-smi --query-gpu=compute_cap --format=csv
 ```
@@ -52,7 +52,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 ..
 ```
 
-E. Jika proses build telah selesai install opencv.
+### E. Jika proses build telah selesai install opencv.
 ```
 make -j$(nproc)
 sudo make install
