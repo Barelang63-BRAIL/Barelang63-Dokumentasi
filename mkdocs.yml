@@ -21,7 +21,6 @@ theme:
     primary: black
 
   logo: assets/logo.png
-  favicon: docs/images/logo.png
 
 plugins:
   - search
