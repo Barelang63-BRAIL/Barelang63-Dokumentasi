@@ -28,7 +28,8 @@ mkdir build
 cd build
 ```
 
-### D. Build opencv dalam folder build yang telah dibuat, sebelum melakukan build periksa CUDA_ARCH_BIN yang terdapat pada sistem anda, dengan command:
+### D. Build opencv dalam folder build yang telah dibuat, 
+sebelum melakukan build periksa CUDA_ARCH_BIN yang terdapat pada sistem anda, dengan command:
 ```
 nvidia-smi --query-gpu=compute_cap --format=csv
 ```
