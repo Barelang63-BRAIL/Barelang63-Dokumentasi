@@ -6,7 +6,7 @@ sudo rm -r /usr/include/opencv4/opencv2
 ```
 berikut langkah-langkah mem-build Opencv dari source dengan aktivasi Cuda:
 
-### 1. install deoendencies yang diperlukan.
+### 1. install dependencies yang diperlukan.
 ```
 sudo apt-get update
 sudo apt-get install -y libgtk2.0-dev pkg-config build-essential cmake git \
@@ -59,6 +59,8 @@ make -j$(nproc)
 sudo make install
 sudo ldconfig
 ```
+
+
 
 # B. Membuat File opencv4.pc untuk OpenCV
 File opencv4.pc berguna sebagai file konfigurasi yang digunakan oleh sistem build (seperti pkg-config) untuk menemukan informasi tentang pustaka OpenCV yang terinstal, sehingga memudahkan proses kompilasi dan linking proyek yang menggunakan OpenCV. Berikut langkah-langkahnya:
