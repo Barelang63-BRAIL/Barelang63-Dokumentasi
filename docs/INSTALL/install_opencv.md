@@ -60,7 +60,7 @@ sudo make install
 sudo ldconfig
 ```
 
-
+#
 
 # B. Membuat File opencv4.pc untuk OpenCV
 File opencv4.pc berguna sebagai file konfigurasi yang digunakan oleh sistem build (seperti pkg-config) untuk menemukan informasi tentang pustaka OpenCV yang terinstal, sehingga memudahkan proses kompilasi dan linking proyek yang menggunakan OpenCV. Berikut langkah-langkahnya:
