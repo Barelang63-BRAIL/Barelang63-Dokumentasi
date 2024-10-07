@@ -9,5 +9,6 @@ Dokumentasi tentang build dan running program vision ada di bawah:
 
 ## **Installation Library**
 Installasi library untuk kebutuhan program nasional, regional, dan lain-lain:
-[Instalations](INSTALL/install_all.md)
+    
+[Installations](INSTALL/install_all.md)
 
