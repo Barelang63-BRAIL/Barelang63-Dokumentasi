@@ -36,5 +36,6 @@ nav:
   - INSTALLATION:
     - Install All Package Robot: INSTALL/install_all.md
     - Build rtdb2 Package Robot: INSTALL/rtdb2_build.md
+    - Install CUDA dan cuDNN: INSTALL/cuda_and_cudnn.md
     - Install ZED SDK: INSTALL/zed_sdk_install.md
     - Install OpenCV dengan Aktivasi Cuda: INSTALL/install_opencv.md

@@ -25,7 +25,7 @@ dataset_example/
 │   ├── val/
 │       ├── img001.txt
 │       ├── img002.txt
-│	└── ...
+│	    └── ...
 │       
 └── data.yaml
 ```
