@@ -1,13 +1,13 @@
 # A. Install OpenCV dari Source dengan Aktivasi Cuda
 
 Sebelum melakukan instalasi, pastikan CUDA dan CUDNN telah terinstal, lalu jika mau anda dapat menghapus Opencv bawaan yang terinstall pada sistem anda dengan command ini.
-```
+```{ .sh .copy }
 sudo rm -r /usr/include/opencv4/opencv2
 ```
 berikut langkah-langkah mem-build Opencv dari source dengan aktivasi Cuda:
 
 ### 1. install dependencies yang diperlukan.
-```
+```{ .sh .copy }
 sudo apt-get update
 sudo apt-get install -y libgtk2.0-dev pkg-config build-essential cmake git \
     libatlas-base-dev gfortran python3-dev \
@@ -16,13 +16,13 @@ sudo apt-get install -y libgtk2.0-dev pkg-config build-essential cmake git \
 ```
 
 ### 2. Clone repositori opencv dan opencv_contrib:
-```
+```{ .sh .copy }
 git clone https://github.com/opencv/opencv.git
 git clone https://github.com/opencv/opencv_contrib.git
 ```
 
 ### 3. Buat folder build pada folder opencv yang telah di clone.
-```
+```{ .sh .copy }
 cd opencv
 mkdir build
 cd build
@@ -30,13 +30,13 @@ cd build
 
 ### 4. Build opencv dalam folder build yang telah dibuat, 
 sebelum melakukan build periksa CUDA_ARCH_BIN yang terdapat pada sistem anda, dengan command:
-```
+```{ .sh .copy }
 nvidia-smi --query-gpu=compute_cap --format=csv
 ```
 
 masukan nilai dari CUDA_ARCH_BIN, berdasarkan output dari command line diatas. Build opencv dengan aktivasi Cuda dengan command dibawah ini: 
 
-```
+```{ .sh .copy }
 cmake -D CMAKE_BUILD_TYPE=RELEASE \
 -D CMAKE_INSTALL_PREFIX=/usr/local \
 -D WITH_CUDA=ON \
@@ -54,7 +54,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 ```
 
 ### 5. Jika proses build telah selesai install opencv.
-```
+```{ .sh .copy }
 make -j$(nproc)
 sudo make install
 sudo ldconfig
@@ -67,14 +67,14 @@ File opencv4.pc berguna sebagai file konfigurasi yang digunakan oleh sistem buil
 
 ### 1. Buat File opencv4.pc
 Buat file dengan nama opencv4.pc di direktori /usr/local/lib/pkgconfig/ atau /usr/lib/pkgconfig/. Gunakan editor teks seperti nano untuk membuat file ini:
-```
+```{ .sh .copy }
 sudo mkdir -p /usr/local/lib/pkgconfig/
 sudo nano /usr/local/lib/pkgconfig/opencv4.pc
 ```
 
 ### 2.  Isi File opencv4.pc
 Isi file opencv4.pc seperti berikut, sesuaikan path pustaka (libdir) dan header (includedir) jika diperlukan dan isi versi opencv berdasarkan versi yang telah dinstall:
-```
+```{ .sh .copy }
 prefix=/usr/local
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
@@ -95,20 +95,19 @@ Cflags: -I${includedir}
 
 ### 3. Set Variabel PKG_CONFIG_PATH
 Tambahkan direktori tempat file opencv4.pc berada ke variabel PKG_CONFIG_PATH, sehingga pkg-config dapat mendeteksinya:
-```
+```{ .sh .copy }
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig/
 ```
 
 Agar perubahan ini bersifat permanen, tambahkan perintah di atas ke dalam file .bashrc:
-```
+```{ .sh .copy }
 echo 'export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig/' >> ~/.bashrc
 source ~/.bashrc
-
 ```
 
 ### 4. Cek Versi dengan pkg-config
 Setelah file opencv4.pc selesai dibuat, cek apakah OpenCV sudah terdeteksi oleh pkg-config dengan perintah berikut:
-```
+```{ .sh .copy }
 pkg-config --modversion opencv4
 ```
 Jika berhasil, perintah di atas akan menampilkan versi OpenCV, yaitu 4.10.0.

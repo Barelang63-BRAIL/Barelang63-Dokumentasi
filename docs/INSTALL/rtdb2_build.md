@@ -21,7 +21,7 @@ This project uses some 3rd-party libraries:
 ## How to build
 Sebelum memulai build lakukan proses ini terlebih dahulu: [install robot](install_all.md)
 
-```
+```{ .sh .copy }
 - copy folder rtdb2 in hardisk barelang63
 - cd rtdb2
 - mkdir build
@@ -31,6 +31,6 @@ Sebelum memulai build lakukan proses ini terlebih dahulu: [install robot](instal
 ```
 
 ## Install rtdb2 monitoring tools
-```
+```{ .sh .copy }
 pip3 install lmdb msgpack-python
 ```

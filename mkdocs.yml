@@ -19,6 +19,7 @@ theme:
   
   palette: 
     primary: black
+    scheme:   slate
 
   logo: assets/logo.png
 

@@ -11,11 +11,11 @@ Instalasi Library yang Diperlukan dari GitHub:
 
 ## Cara Menginstal Library dari GitHub
 untuk clone repository, gunakan perintah berikut:
-```
+```{ .sh .copy }
 git clone https://github.com/bblanchon/ArduinoJson.git
 ```
 To build and install the cloned library, run:
-```
+```{ .sh .copy }
 cd <library_you_cloned>
 mkdir build
 cmake ..
@@ -25,7 +25,7 @@ Ulangi proses ini untuk setiap library yang di-kloning.
 
 ## Instalasi Library untuk Robot:
 Jalankan perintah berikut untuk menginstal library yang diperlukan:
-```
+```{ .sh .copy }
 sudo apt-get install \
     net-tools \
     git \

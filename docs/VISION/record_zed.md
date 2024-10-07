@@ -1,7 +1,7 @@
 # Capture dan Record Video Menggunakan Zed Camera
 
 Sebelum mengikuti langkah-langkah di bawah ini, clone repositori ini terlebih dahulu:
-```
+```{ .sh .copy }
 git clone https://github.com/dsyahput/Capture-and-Record-Video-using-Zed-Camera.git
 ```
 
@@ -14,7 +14,7 @@ git clone https://github.com/dsyahput/Capture-and-Record-Video-using-Zed-Camera.
 ## B. Build Program
 Buat direktori build: Buka terminal dan navigasikan ke direktori yang berisi program dan file CMakeLists.txt, lalu buat direktori build:
 
-``` bash
+```{ .sh .copy }
 cd Capture-and-Record-Video-using-Zed-Camera
 mkdir build
 cd build
@@ -24,7 +24,7 @@ make
 ## C. Menjalankan Program
 Setelah mem-build program, Anda dapat menjalankannya dengan perintah berikut:
 
-```bash
+```{ .sh .copy }
 ./zed_camera_record
 ```
 
