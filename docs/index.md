@@ -5,7 +5,7 @@
 ## **Vision**
 Dokumentasi tentang build dan running program vision ada di bawah:
 
-[Vision](VISION/record_zed.md)g f bg
+[Vision](VISION/record_zed.md)
 
 ## **Installation Library**
 Installasi library untuk kebutuhan program nasional, regional, dan lain-lain:
