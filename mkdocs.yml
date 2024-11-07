@@ -23,6 +23,9 @@ theme:
 
   logo: assets/logo.png
 
+  theme:
+  favicon: images/logo.png
+
 plugins:
   - search
 
