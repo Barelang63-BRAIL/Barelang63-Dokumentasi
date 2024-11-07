@@ -39,7 +39,7 @@ cd toolVision
 mkdir build
 cd build
 cmake ..
-make ..
+make 
 ```
 
 setelah package di build terdapat 4 executable yang dapat digunakan di antaranya:
