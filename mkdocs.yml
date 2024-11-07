@@ -43,3 +43,4 @@ nav:
     - Install CUDA dan cuDNN: INSTALL/cuda_and_cudnn.md
     - Install ZED SDK: INSTALL/zed_sdk_install.md
     - Install OpenCV dengan Aktivasi Cuda: INSTALL/install_opencv.md
+    - Install STM32CubeIDE : INSTALL/install_stm32cubeide.md
