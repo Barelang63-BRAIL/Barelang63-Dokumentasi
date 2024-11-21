@@ -17,7 +17,7 @@ sudo gedit /usr/share/X11/xorg.conf.d/xorg.conf
 ```
 
 Tambahkan isi berikut ke file konfigurasi tersebut. Anda dapat menyesuaikan resolusi sesuai kebutuhan (disarankan menggunakan resolusi monitor yang digunakan untuk secara remote):
-```
+```{ .sh .copy }
 Section "Device"
     Identifier  "Configured Video Device"
     Driver      "dummy"
