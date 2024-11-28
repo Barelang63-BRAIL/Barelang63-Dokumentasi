@@ -1,4 +1,5 @@
-# A. Install OpenCV dari Source dengan Aktivasi Cuda
+# OPENCV DENGAN CUDA DAN CUDNN
+## A. Install OpenCV dari Source dengan Aktivasi Cuda
 
 Sebelum melakukan instalasi, pastikan CUDA dan CUDNN telah terinstal, lalu jika mau anda dapat menghapus Opencv bawaan yang terinstall pada sistem anda dengan command ini.
 ```{ .sh .copy }
@@ -60,9 +61,8 @@ sudo make install
 sudo ldconfig
 ```
 
-#
 
-# B. Membuat File opencv4.pc untuk OpenCV
+## B. Membuat File opencv4.pc untuk OpenCV
 File opencv4.pc berguna sebagai file konfigurasi yang digunakan oleh sistem build (seperti pkg-config) untuk menemukan informasi tentang pustaka OpenCV yang terinstal, sehingga memudahkan proses kompilasi dan linking proyek yang menggunakan OpenCV. Berikut langkah-langkahnya:
 
 ### 1. Buat File opencv4.pc
