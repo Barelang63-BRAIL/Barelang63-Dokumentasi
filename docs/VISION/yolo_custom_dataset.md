@@ -25,12 +25,12 @@ Berikut adalah beberapa package yang perlu diinstal untuk memulai training YOLO1
 ```
 
 ## 2. Prepare Dataset
-### a. Labeling Dataset
+### A. Labeling Dataset
 Sebelum melatih model, Anda perlu memberi label pada dataset gambar. Dalam format YOLO, setiap gambar disertai dengan file teks yang berisi anotasi objek yang terdapat dalam gambar tersebut. File teks ini mengikuti format tertentu. Untuk melabeli gambar, Anda dapat menggunakan beberapa tools yang mempermudah proses ini. seperti [LabelImg](https://github.com/HumanSignal/labelImg.git), [Label Studio](https://labelstud.io), ataupun [Roboflow](https://roboflow.com).
 ![-](../images/yolo11_custom/labeling.png)
 
 
-### b. Struktur Folder Dataset
+### B. Struktur Folder Dataset
 Dataset perlu diorganisasi dengan cara yang sesuai dengan format YOLO. Berikut adalah struktur direktori yang disarankan untuk dataset yang akan ditrain:
 ```
 dataset_example/
@@ -57,7 +57,7 @@ dataset_example/
 │       
 └── data.yaml
 ```
-### c. Penjelasan Struktur Folder:
+### C. Penjelasan Struktur Folder:
 1. images/: Folder ini berisi gambar-gambar yang akan digunakan untuk pelatihan dan validasi.
     - train/: Gambar-gambar untuk training.
     - val/: Gambar-gambar untuk validation.
@@ -69,7 +69,7 @@ dataset_example/
 ## 3. Training The Dataset
 Setelah semua langkah di atas dilakukan, Anda dapat memulai proses pelatihan. Berikut adalah langkah-langkah yang dapat diikuti pada Jupyter Notebook atau file dengan format .ipynb.
 
-### a. Import Libraries / Package.
+### A. Import Libraries / Package.
 Mulailah dengan mengimpor library yang dibutuhkan:
 ```{ .sh .copy }
 import os
@@ -77,7 +77,7 @@ import cv2
 from ultralytics import YOLO
 ```
 
-### b. Define Dataset Paths
+### B. Define Dataset Paths
 ```{ .sh .copy }
 # Define paths to your dataset
 dataset_path = 'E:\Yolov11-custom-object-detection\dataset\omniku'
@@ -87,7 +87,7 @@ data_yaml_path = os.path.join(dataset_path, 'data.yaml')
 ```
 sesuaikan "dataset_path" dengan Custom Dataset yang akan di training.
 
-### c. Prepare Data YAML
+### C. Prepare Data YAML
 ```{ .sh .copy }
 data_yaml_content = """
 path: E:\Yolov11-custom-object-detection\dataset\omniku
@@ -113,7 +113,7 @@ with open(data_yaml_path, 'w') as file:
 
 - names: Daftar nama kelas dalam dataset Anda. Gantilah ['Ball'] dengan nama-nama kelas yang ada dalam dataset Anda. Misalnya, jika dataset Anda memiliki dua kelas, ubah menjadi ['Ball', 'Player'].
 
-### d. Load YOLOv11 Model
+### D. Load YOLOv11 Model
 ```{ .sh .copy }
 # Load a YOLOv11 model (e.g., YOLO11n for small model)
 model = YOLO('yolo11n.pt')
@@ -121,7 +121,7 @@ model = YOLO('yolo11n.pt')
 Berikut adalah beberapa pilihan model YOLO11 yang dapat dipilih berdasarkan ukuran dan kebutuhan Anda:
 ![-](../images/yolo11_custom/model_comp.png)
 
-### e. Start The Training
+### E. Start The Training
 Setelah model YOLOv11 dimuat dan file data.yaml disiapkan, proses training dapat dimulai dengan menentukan beberapa parameter pelatihan.
 ```{ .sh .copy }
 train_params = {
@@ -141,7 +141,7 @@ Tunggu hingga proses training selesai berdasarkan parameter yang telah diatur.
 
 Saat skrip training dijalankan di Jupyter Notebook atau platform lainnya, folder runs akan dibuat secara otomatis. Anda dapat memeriksa terminal atau output selama proses training untuk mengetahui di mana hasil training disimpan. Biasanya, hasil tersebut disimpan di direktori seperti runs/detect/train, di mana Anda dapat menemukan weights model, log, dan metrics.
 
-### f. Exporting YOLOv11 Custom Model to ONNX Format
+### F. Exporting YOLOv11 Custom Model to ONNX Format
 Karena inference pada robot menggunakan bahasa pemrograman C++, model yang telah dilatih perlu dikonversi ke format ONNX (Open Neural Network Exchange). ONNX adalah format standar yang digunakan untuk menyimpan model machine learning dan deep learning, sehingga dapat dijalankan di berbagai platform dan framework seperti TensorFlow, PyTorch, dan C++.
 ```{ .sh .copy }
 model_custom = YOLO('runs/detect/train4/weights/best.pt')
@@ -150,4 +150,11 @@ model_custom.export(format='onnx')
 Ganti path "model_custom" berdasarkan path model yang telah ditraining.
 
 Dengan mengikuti langkah-langkah di atas, Anda dapat melatih model YOLOv11 dengan dataset custom dan mengekspor model yang dilatih ke dalam format ONNX untuk digunakan dalam aplikasi berbasis C++ pada robot atau perangkat lainnya.
+
+## 4. Clone Repository GitHub
+Untuk mempermudah, repository GitHub yang telah disediakan dapat di-clone yang berisi kode untuk melatih YOLOv11 pada dataset custom:
+
+[Yolov11-custom-object-detection](https://github.com/dsyahput/Yolov11-custom-object-detection.git)
+
+Dengan meng-clone repository ini, kode yang sudah ada dapat langsung digunakan untuk melatih model YOLOv11 sesuai dengan dataset custom.
 
