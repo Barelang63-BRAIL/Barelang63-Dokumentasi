@@ -36,6 +36,7 @@ nav:
   - VISION:
     - Record Menggunakan ZED Camera: VISION/record_zed.md
     - Penggunaan toolVision: VISION/toolVision.md
+    - YOLO11 Custom Model: VISION/yolo_custom_dataset.md
 
   - INSTALLATION:
     - Install All Package Robot: INSTALL/install_all.md
