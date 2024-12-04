@@ -49,8 +49,7 @@ theme:
 
 plugins:
   - search
-  - git-revision-date-localized:
-      enable_creation_date: true
+  - git-revision-date-localized
   - git-committers:
       repository: Barelang63-BRAIL/Barelang63-Dokumentasi
       branch: main
