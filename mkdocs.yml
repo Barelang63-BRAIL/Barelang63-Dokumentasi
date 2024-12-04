@@ -52,7 +52,6 @@ theme:
 
 plugins:
   - search
-  - git-authors
   - git-committers:
       repository: Barelang63-BRAIL/Barelang63-Dokumentasi
       branch: main
