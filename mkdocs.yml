@@ -5,7 +5,6 @@ repo_name: Barelang63-BRAIL/Barelang63-Dokumentasi
 
 theme:
   name: material
-  
   features:
   - navigation.instant
   - navigation.instant.progress
@@ -15,6 +14,7 @@ theme:
   - navigation.tabs.sticky
   - navigation.sections
   - navigation.expand
+  # - toc.integrate
   - navigation.top
   - search.suggest
   - search.highlight
@@ -22,7 +22,7 @@ theme:
   
   palette: 
     primary: black
-    scheme: slate
+    scheme:   slate
 
   logo: assets/logo.png
 
@@ -36,7 +36,7 @@ plugins:
 
   - git-revision-date-localized:
       enable_creation_date: true
-
+      
   - git-committers:
       repository: Barelang63-BRAIL/Barelang63-Dokumentasi
       branch: main
@@ -56,4 +56,4 @@ nav:
     - Install CUDA dan cuDNN: INSTALL/cuda_and_cudnn.md
     - Install ZED SDK: INSTALL/zed_sdk_install.md
     - Install OpenCV dengan Aktivasi Cuda: INSTALL/install_opencv.md
-    - Install STM32CubeIDE: INSTALL/install_stm32cubeide.md
+    - Install STM32CubeIDE : INSTALL/install_stm32cubeide.md
