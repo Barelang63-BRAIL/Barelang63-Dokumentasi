@@ -15,12 +15,12 @@ Berikut adalah beberapa package yang perlu diinstal untuk memulai training YOLO1
 - [PYTORCH](https://pytorch.org) - Framework utama untuk machine learning dan deep learning yang digunakan dalam pelatihan model YOLO. Disarankan untuk melakukan training di perangkat yang dilengkapi dengan GPU agar proses pelatihan berjalan lebih cepat dan efisien. Jika menggunakan GPU, pastikan untuk menginstal [CUDA](../INSTALL/cuda_and_cudnn.md) pada perangkat tersebut, kemudian instal versi PyTorch yang mendukung CUDA untuk memanfaatkan akselerasi GPU dalam pelatihan model.
 
 - ULTRALYTICS - Library yang menyediakan implementasi dari YOLO. Anda dapat menginstalnya dengan menjalankan perintah berikut:
-```{ .sh .copy }
+```py
 !pip install ultralytics
 ```     
 
 - OPENCV - Digunakan untuk memproses gambar dan video. Anda dapat menginstalnya dengan perintah berikut:
-```{ .sh .copy }
+```py
 !pip install opencv-python
 ```
 
@@ -71,14 +71,14 @@ Setelah semua langkah di atas dilakukan, Anda dapat memulai proses pelatihan. Be
 
 ### A. Import Libraries / Package.
 Mulailah dengan mengimpor library yang dibutuhkan:
-```{ .sh .copy }
+```py
 import os
 import cv2
 from ultralytics import YOLO
 ```
 
 ### B. Define Dataset Paths
-```{ .sh .copy }
+```py
 # Define paths to your dataset
 dataset_path = 'E:\Yolov11-custom-object-detection\dataset\omniku'
 
@@ -88,7 +88,7 @@ data_yaml_path = os.path.join(dataset_path, 'data.yaml')
 sesuaikan "dataset_path" dengan Custom Dataset yang akan di training.
 
 ### C. Prepare Data YAML
-```{ .sh .copy }
+```py
 data_yaml_content = """
 path: E:\Yolov11-custom-object-detection\dataset\omniku
 train: E:\Yolov11-custom-object-detection\dataset\omniku\images\\train
@@ -114,7 +114,7 @@ with open(data_yaml_path, 'w') as file:
 - names: Daftar nama kelas dalam dataset Anda. Gantilah ['Ball'] dengan nama-nama kelas yang ada dalam dataset Anda. Misalnya, jika dataset Anda memiliki dua kelas, ubah menjadi ['Ball', 'Player'].
 
 ### D. Load YOLOv11 Model
-```{ .sh .copy }
+```py
 # Load a YOLOv11 model (e.g., YOLO11n for small model)
 model = YOLO('yolo11n.pt')
 ```
@@ -123,7 +123,7 @@ Berikut adalah beberapa pilihan model YOLO11 yang dapat dipilih berdasarkan ukur
 
 ### E. Start The Training
 Setelah model YOLOv11 dimuat dan file data.yaml disiapkan, proses training dapat dimulai dengan menentukan beberapa parameter pelatihan.
-```{ .sh .copy }
+```py
 train_params = {
     'data': data_yaml_path,      # Path to data.yaml
     'epochs': 500,               # Number of epochs
@@ -143,7 +143,7 @@ Saat skrip training dijalankan di Jupyter Notebook atau platform lainnya, folder
 
 ### F. Exporting YOLOv11 Custom Model to ONNX Format
 Karena inference pada robot menggunakan bahasa pemrograman C++, model yang telah dilatih perlu dikonversi ke format ONNX (Open Neural Network Exchange). ONNX adalah format standar yang digunakan untuk menyimpan model machine learning dan deep learning, sehingga dapat dijalankan di berbagai platform dan framework seperti TensorFlow, PyTorch, dan C++.
-```{ .sh .copy }
+```py
 model_custom = YOLO('runs/detect/train4/weights/best.pt')
 model_custom.export(format='onnx')
 ```
