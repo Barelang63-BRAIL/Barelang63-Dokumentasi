@@ -2,7 +2,7 @@
 ## A. Install OpenCV dari Source dengan Aktivasi Cuda
 
 Sebelum melakukan instalasi, pastikan CUDA dan CUDNN telah terinstal, lalu jika mau anda dapat menghapus Opencv bawaan yang terinstall pada sistem anda dengan command ini.
-```{ .sh .copy }
+```
 sudo rm -r /usr/include/opencv4/opencv2
 ```
 berikut langkah-langkah mem-build Opencv dari source dengan aktivasi Cuda:
