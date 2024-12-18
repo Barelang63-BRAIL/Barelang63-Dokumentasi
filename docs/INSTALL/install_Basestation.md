@@ -43,8 +43,9 @@ Ada beberapa library yang diperlukan untuk membuat Basestation:
 ## Menjalankan Basestation
 Jalankan aplikasi Basestation dengan perintah berikut:
 ```sh
-./basestation
+./basestation --agent_id 100 --rtdb_config_file /opt/offline/config/cfg.xml --network_name agent1
 ```
+Pastikan untuk menyesuaikan parameter ini dengan perangkat dan konfigurasi yang terdapat pada robot
 
 Tampilan Basestation setelah dijalankan:
 ![Basestation UI](../images/basestation_folder/basestation.jpeg)

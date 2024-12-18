@@ -29,7 +29,6 @@ Berikut adalah beberapa package yang perlu diinstal untuk memulai training YOLO1
 Sebelum melatih model, Anda perlu memberi label pada dataset gambar. Dalam format YOLO, setiap gambar disertai dengan file teks yang berisi anotasi objek yang terdapat dalam gambar tersebut. File teks ini mengikuti format tertentu. Untuk melabeli gambar, Anda dapat menggunakan beberapa tools yang mempermudah proses ini. seperti [LabelImg](https://github.com/HumanSignal/labelImg.git), [Label Studio](https://labelstud.io), ataupun [Roboflow](https://roboflow.com).
 ![-](../images/yolo11_custom/labeling.png)
 
-
 ### B. Struktur Folder Dataset
 Dataset perlu diorganisasi dengan cara yang sesuai dengan format YOLO. Berikut adalah struktur direktori yang disarankan untuk dataset yang akan ditrain:
 ```
