@@ -34,6 +34,8 @@ Berikut adalah referensi yang dapat digunakan untuk mempelajari lebih dalam tent
 
 🔗 **[CMake](https://sternumiot.com/iot-blog/cmake-tutorial-basic-concepts-and-building-your-first-project/)**
 
+🔗 **[Pemrograman Sistem Embeded](books/stm32/Pemrograman_Sistem_Embeded_Berbasis_ARM.pdf)**
+
 🔗 **[OpenCV C++](https://www.opencv-srf.com/p/introduction.html)**
 
 🔗 **[YOLO-Ultralytics](https://docs.ultralytics.com/)**
