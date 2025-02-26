@@ -86,3 +86,5 @@ nav:
       - Install OpenCV dengan Aktivasi Cuda: INSTALL/install_opencv.md
       - Install STM32CubeIDE: INSTALL/install_stm32cubeide.md
       - Install Basestation: INSTALL/install_Basestation.md
+  - RUNNING:
+      - Robot Builder dan Launcher: RUNNING/builder_and_launcher.md

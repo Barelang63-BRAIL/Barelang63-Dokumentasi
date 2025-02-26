@@ -91,7 +91,9 @@ Cflags: -I${includedir}
 - libdir: Path ke direktori pustaka OpenCV (/usr/local/lib).                
 - includedir: Path ke header OpenCV (/usr/local/include/opencv4).           
 - Libs: Daftar pustaka yang ingin digunakan.            
-- Cflags: Path ke header file yang diperlukan untuk kompilasi kode.         
+- Cflags: Path ke header file yang diperlukan untuk kompilasi kode. 
+
+Pastikan untuk menyesuaikan versi OpenCV sesuai dengan yang telah terinstal.
 
 ### 3. Set Variabel PKG_CONFIG_PATH
 Tambahkan direktori tempat file opencv4.pc berada ke variabel PKG_CONFIG_PATH, sehingga pkg-config dapat mendeteksinya:
