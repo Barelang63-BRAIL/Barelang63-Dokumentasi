@@ -2,7 +2,7 @@ site_name: Barelang63 Documentations
 site_url: https://mydomain.org/mysite
 repo_url: https://github.com/Barelang63-BRAIL/Barelang63-Dokumentasi.git
 repo_name: Barelang63-BRAIL/Barelang63-Dokumentasi
-copyright: "© 2024 Barelang63-BRAIL. All Rights Reserved."
+copyright: "© 2025 Barelang63-BRAIL. All Rights Reserved."
 
 theme:
   name: material
@@ -55,8 +55,6 @@ plugins:
   - git-committers:
       repository: Barelang63-BRAIL/Barelang63-Dokumentasi
       branch: main
-  - git-revision-date-localized:
-      type: date
 
 markdown_extensions:
   - pymdownx.highlight:
