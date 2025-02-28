@@ -55,6 +55,8 @@ plugins:
   - git-committers:
       repository: Barelang63-BRAIL/Barelang63-Dokumentasi
       branch: main
+  - git-revision-date-localized:
+      type: date
 
 markdown_extensions:
   - pymdownx.highlight:
