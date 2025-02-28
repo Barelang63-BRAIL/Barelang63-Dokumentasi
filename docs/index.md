@@ -38,6 +38,8 @@ Berikut adalah referensi yang dapat digunakan untuk mempelajari lebih dalam tent
 
 🔗 **[OpenCV C++](https://www.opencv-srf.com/p/introduction.html)**
 
+🔗 **[ZED SDK API](https://www.stereolabs.com/docs)**
+
 🔗 **[YOLO-Ultralytics](https://docs.ultralytics.com/)**
 
 🔗 **[ManualSlib](https://www.manualslib.com/)**
