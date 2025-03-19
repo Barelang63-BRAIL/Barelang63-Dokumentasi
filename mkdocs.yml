@@ -88,3 +88,6 @@ nav:
       - Install Basestation: INSTALL/install_Basestation.md
   - RUNNING:
       - Robot Builder dan Launcher: RUNNING/builder_and_launcher.md
+  - EMBEDDED SYSTEM:
+      - Cara Debug STM32 : EMBEDDED/debug_stm.md
+      - Koneksi ST-LINK : EMBEDDED/ST-LINK.md
