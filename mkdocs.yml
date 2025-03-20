@@ -86,9 +86,9 @@ nav:
       - Install OpenCV dengan Aktivasi Cuda: INSTALL/install_opencv.md
       - Install STM32CubeIDE: INSTALL/install_stm32cubeide.md
       - Install Basestation: INSTALL/install_Basestation.md
+      - Install Program Strategy Offline: INSTALL/install_strategy_offline.md
   - RUNNING:
       - Robot Builder dan Launcher: RUNNING/builder_and_launcher.md
-      - Running Basestation Robot: RUNNING/run_basestation.md
   - EMBEDDED SYSTEM:
       - Cara Debug STM32 : EMBEDDED/debug_stm.md
       - Koneksi ST-LINK : EMBEDDED/ST-LINK.md
