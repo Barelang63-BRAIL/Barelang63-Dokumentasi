@@ -7,11 +7,12 @@
 -  [Install ZED SDK](zed_sdk_install.md)
 -  [Install OpenCV](install_opencv.md)
 -  [Build Basestation](install_Basestation.md) (Optional)
--  [Make robot_launch and robot_build](../RUNNING/builder_and_launcher.md) (Optional)
+-  [Make robot_launch and robot_build](../RUNNING/builder_and_launcher.md)
 
 ## Requirements
 Pergi terlebih dahulu ke folder maen_boss,
 Sebelum build program strategy perlu build folder dibawah ini terlebih dahulu (Pastikan sesuai urutan):
+
 -  def
 -  grid
 -  control
