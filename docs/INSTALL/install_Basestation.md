@@ -24,28 +24,40 @@ Ada beberapa library yang diperlukan untuk membuat Basestation:
 
 ### Cara Build Basestation
 1. Salin folder Basestation dari hardisk Barelang 63.
-2. Masuk ke direktori Basestation dan buat folder build:
-   ```sh
-   mkdir build
-   cd build
-   ```
-3. Atur variabel lingkungan:
-   ```sh
-   export CMAKE_PREFIX_PATH="/path_to_qt"
-   export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/path_to_qt:/path_to_vtk
-   ```
-4. Jalankan perintah build:
-   ```sh
-   cmake ..
-   make
-   ```
+2. Masuk ke Folder PROGRAM KRSBI BERODA dan copy file basestation.tar
+3. Install di Terminal:
+```
+pip3 install nuitka
+```
+4. setelah copy file basestation.tar, lalu ekstrak file tersebut ke directory anda dan pergi ke directory basestation
+5. Jalankan Perintah dibawah ini: 
+```
+python3 -m nuitka basestation_build.py -o basestation_build
+```
+```
+python3 -m nuitka basestation_launch.py -o basestation_launch
+```
+6. setelah itu pindahkan executable basestation_launch dan basestation_build ke folder /usr/bin/ dengan command:
+```
+sudo mv basestation_build /usr/bin/
+```
+```
+sudo mv basestation_launch /usr/bin/
+```
+7. kemudian kita bisa build basestation (Note 8 artinya sebanyak apa core cpu):   
+```
+basestation_build 8
+```
 
 ## Menjalankan Basestation
 Jalankan aplikasi Basestation dengan perintah berikut:
 ```sh
-./basestation --agent_id 100 --rtdb_config_file /opt/offline/config/cfg.xml --network_name agent1
+robot_launch build/basestation
 ```
-Pastikan untuk menyesuaikan parameter ini dengan perangkat dan konfigurasi yang terdapat pada robot
+untuk mengganti parameter running bisa menggunakan command berikut:
+```
+basestation_launch build/basestation --config_file /opt/offline/config/cfg.xml --network_name agent2 --id 50
+```
 
 Tampilan Basestation setelah dijalankan:
 ![Basestation UI](../images/basestation_folder/basestation.jpeg)
