@@ -76,7 +76,8 @@ nav:
       - Record Menggunakan ZED Camera: VISION/record_zed.md
       - Penggunaan toolVision: VISION/toolVision.md
       - YOLO11 Custom Model: VISION/yolo_custom_dataset.md
-      - Auto Label Dataset: VISION/autodistill.md
+      - Autodistill: VISION/autodistill.md
+      - X-Anylabelling: VISION/X-Anylabelling.md
   - INSTALLATION:
       - Install All Package Robot: INSTALL/install_all.md
       - Build rtdb2 Package Robot: INSTALL/rtdb2_build.md
