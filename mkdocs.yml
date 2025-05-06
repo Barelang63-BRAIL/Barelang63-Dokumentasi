@@ -78,6 +78,7 @@ nav:
       - YOLO11 Custom Model: VISION/yolo_custom_dataset.md
       - Autodistill: VISION/autodistill.md
       - X-Anylabelling: VISION/X-Anylabelling.md
+      - YOLO11 + TensorRT: VISION/yolo11+tensorrt.md
   - INSTALLATION:
       - Install All Package Robot: INSTALL/install_all.md
       - Build rtdb2 Package Robot: INSTALL/rtdb2_build.md
