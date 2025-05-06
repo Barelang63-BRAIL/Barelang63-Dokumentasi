@@ -27,6 +27,14 @@ Ikuti panduan berikut untuk menjalankan robot dengan benar dan memastikan semua 
 
 ---
 
+## 📟 **Embedded System**
+Pelajari lebih lanjut mengenai sistem embedded yang digunakan pada robot dalam PBL ini.
+
+🔗 **[Lihat Dokumentasi Embedded System](EMBEDDED/debug_stm.md)**
+
+---
+
+
 ## 📚 **Referensi Pembelajaran**
 Berikut adalah referensi yang dapat digunakan untuk mempelajari lebih dalam tentang teknologi yang diterapkan dalam proyek ini:
 

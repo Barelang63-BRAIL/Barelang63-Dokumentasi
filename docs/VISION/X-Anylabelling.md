@@ -4,7 +4,7 @@
 
 ## Instalasi dan Penggunaan
 
-[X-Anylabeling](https://github.com/CVHub520/X-AnyLabeling/tree/main) X-Anylabeling adalah alat anotasi dataset yang dilengkapi dengan AI engine untuk mempermudah dan mempercepat proses anotasi. X-Anylabeling mendukung berbagai format model seperti YOLO, YOLO-OBB, YOLO Instance Segmentation, VOC, COCO, dan lainnya.
+[X-Anylabeling](https://github.com/CVHub520/X-AnyLabeling/tree/main) adalah alat anotasi dataset yang dilengkapi dengan AI engine untuk mempermudah dan mempercepat proses anotasi. X-Anylabeling mendukung berbagai format model seperti YOLO, YOLO-OBB, YOLO Instance Segmentation, VOC, COCO, dan lainnya.
 
 Dokumentasi X-Anylabeling sudah lengkap, termasuk panduan instalasi dan penggunaan. Anda dapat langsung mengikuti petunjuk yang tersedia di repositorinya tanpa perlu panduan tambahan langkah demi langkah.
 
@@ -13,7 +13,9 @@ Dokumentasi X-Anylabeling sudah lengkap, termasuk panduan instalasi dan pengguna
 * 🚀 [Panduan Penggunaan](https://github.com/CVHub520/X-AnyLabeling/blob/main/docs/en/user_guide.md)
 
 ## Auto Label dengan Model Predefined
-X-Anylabeling menyediakan beberapa model predefined yang dapat diunduh dan langsung digunakan untuk melakukan anotasi otomatis. Beberapa contoh model yang tersedia antara lain YOLO, GroundingDINO, GroundingSAM, DepthAnything, dan lainnya. berikut cara penggunaannya:
+X-Anylabeling menyediakan beberapa model predefined yang dapat diunduh dan langsung digunakan untuk melakukan anotasi otomatis. Beberapa contoh model yang tersedia antara lain YOLO, GroundingDINO, GroundingSAM, DepthAnything, dan lainnya. 
+
+Berikut demo penggunaannya:
 
 ![-](../images/x-anylabelling/x-anylabeling_demonya.gif)
 
@@ -55,11 +57,11 @@ Untuk menggunakan custom model yang telah dikonfigurasi:
 
 * Pada opsi pemilihan model AI, pilih "Load Custom Model".
 
-* Arahkan ke file .yaml yang sudah Anda buat dan pilih file tersebut.
+* Arahkan ke file ``.yaml`` yang sudah Anda buat dan pilih file tersebut.
 
-* Model akan dimuat dan siap digunakan untuk proses anotasi otomatis.
+* Model akan dimuat dan siap digunakan untuk proses auto label.
 
-berikut cara penggunaannya:
+berikut demo penggunaannya:
 
 ![-](../images/x-anylabelling/custom_model.gif)
 
