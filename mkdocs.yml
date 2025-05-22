@@ -91,6 +91,7 @@ nav:
       - Install Program Strategy Offline: INSTALL/install_strategy_offline.md
   - RUNNING:
       - Robot Builder dan Launcher: RUNNING/builder_and_launcher.md
+      - Running Robot: RUNNING/run_robot.md
   - EMBEDDED SYSTEM:
       - Cara Debug STM32 : EMBEDDED/debug_stm.md
       - Koneksi ST-LINK : EMBEDDED/ST-LINK.md
