@@ -26,8 +26,10 @@ robot_launcher /opt/offline/bin/offline_node
 
 ## 4. Jalankan Basestation
 Gunakan Monitor PC Barelang63:
+
 - WiFi sudah terhubung ke router barelang63
 - Sudah berada di direktori folder basestation
+
 ```bash
 basestation_launch build/basestation
 ```
