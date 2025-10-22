@@ -11,14 +11,18 @@ Hingga saat ini, fitur yang diekstraksi meliputi nilai dari bounding box bola ya
 
 Contoh kode untuk perhitungan fitur-fitur tersebut adalah sebagai berikut:
 ```cpp
-double distPix = sqrt(pow(poseX_ball - image_center_x, 2) + pow(poseY_ball - image_center_x, 2));
+double distPix = sqrt(pow(poseX_ball - image_center_x, 2) + pow(poseY_ball - image_center_y, 2));
+double angle = atan2(poseY_ball - 240, poseX_ball - 240) * 180 / M_PI;
+if (angle < 0)
+    angle += 360;
+
 double BBSize = (box.right - box.left) * (box.bottom - box.top);
 double aspRatio = width / height;
 double relative_height = height;
 double normalized_BBSize = BBSize / (image_height * image_width);
 double horizontal_offset = (poseX_ball - image_center_x) / image_width;
 double vertical_offset = (poseY_ball - image_center_y) / image_height;
-double log_distPix = std::log(1.0f +distPix);
+double log_distPix = std::log(1.0f + distPix);
 ```
 
 > 📌 `poseX_ball` dan `poseY_ball` adalah koordinat bola pada frame, yang dapat diperoleh dari titik tengah bounding box.    
@@ -45,6 +49,16 @@ Selanjutnya, proses pelatihan model MLP untuk regresi dapat mengikuti panduan ya
 
 Proses training tersebut akan menghasilkan beberapa file model hasil pelatihan.
 Pada implementasi di robot Barelang63, model yang digunakan memiliki format `.onnx`, yang memungkinkan integrasi mudah ke dalam sistem berbasis C++ untuk inferensi real-time.
+
+## Konversi Estimasi Jarak ke Koordinat Lokal (X dan Y)
+Setelah nilai estimasi jarak bola (distPred) diperoleh dari model, nilai tersebut dapat dikonversi menjadi koordinat lokal X dan Y.
+Implementasi konversinya dapat dilakukan dengan kode berikut:
+```cpp
+double x_pos = disPred * sin(angle * M_PI / 180.0);
+double y_pos = distPred * cos(angle * M_PI / 180.0);
+```
+> 📌 `distPred` merupakan nilai jarak yang diprediksi oleh model machine learning.  
+> 📌 `angle` adalah nilai sudut yang digunakan saat proses feature extraction sebelumnya.        
 
 ## video implementasi
 Berikut merupakan tampilan hasil penerapan estimasi jarak bola menggunakan model machine learning ini:
