@@ -4,9 +4,7 @@ Pada implementasi sistem saat dokumentasi ini ditulis (Oktober 2025), estimasi j
 
 Proses estimasi jarak menggunakan kamera omnidirectional dapat diilustrasikan pada gambar di bawah ini:
 
-<div style="text-align: center;">
-  <img src="../images/ball_distance_estimation/figure1.png" alt="Ilustrasi Estimasi Jarak Bola" width="600"/>
-</div>
+![-](../images/ball_distance_estimation/figure1.png)
 
 Seperti terlihat pada gambar di atas, model regresi menerima fitur hasil ekstraksi (feature extraction) yang diperoleh dari proses deteksi objek.
 Hingga saat ini, fitur yang diekstraksi meliputi nilai dari bounding box bola yang terdeteksi, serta panjang dan lebar frame gambar dari kamera omnidirectional.
