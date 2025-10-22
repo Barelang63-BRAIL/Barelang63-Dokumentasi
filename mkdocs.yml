@@ -79,6 +79,7 @@ nav:
       - Autodistill: VISION/autodistill.md
       - X-Anylabelling: VISION/X-Anylabelling.md
       - YOLO11 + TensorRT: VISION/yolo11+tensorrt.md
+      - Ball Distance Estimation: VISION/ball_distance_regression.md
   - INSTALLATION:
       - Install All Package Robot: INSTALL/install_all.md
       - Build rtdb2 Package Robot: INSTALL/rtdb2_build.md
